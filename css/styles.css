@@ -4,7 +4,8 @@
     box-sizing: content-box;
 }
 
-body {
+.section1 {
+    height: 650px;
     background: url(../assets/background.jpg);
 }
 
@@ -14,13 +15,15 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Dancing Script', 'cursive';
     font-size: xx-large;
+    font-weight: normal;
     margin-left: 50px;
     margin-right: 400px;
 }
 .navbar-brand:hover {
-    font-style: italic;
+    transform: scale(1.4);
+    font-weight: bolder;
 }
 
 .tabs {
@@ -34,10 +37,97 @@ body {
 }
 
 .tabs:hover {
-    transition: 0.2sease-in-out;
+    transition: 0.2s ease-in-out;
     padding: 20px;
     background: url(../assets/background.jpg);
-    background-size: cover;
-    color: yellowgreen;
+    color: limegreen;
     text-decoration: none;
 }
+
+.heading {
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.heading span {
+    line-height: 70px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-size: large;
+    border-radius: 30px;
+    background-color: white;
+    color: indigo;
+    text-decoration: none;
+    margin-right: 30px;
+}
+#button:hover {
+    transform: scale(1.1);
+    background-color: limegreen;
+    color: black;
+}
+
+.cards {
+    display: inline-flex;
+}
+
+.card {
+    border-width: 4px thin;
+    border-color: black;
+    border-radius: 30px;
+    box-shadow: grey;
+    margin: 40px;
+}
+.card > img {
+    border-radius: 20px;
+    height: 200px;
+}
+.card-body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.aboutus {
+    width: 100%;
+    display: inline-flex;
+    height: 400px;
+    background-color: whitesmoke;
+}
+
+.left {
+    color: purple;
+    width: 50%;
+    height: 400px;
+}
+
+.right {
+    width: 50%;
+}
+
+.circle {
+    margin-top: 20px;
+    width: 600px;
+    height: 350px;
+    background: url('../assets/tech.jpg');
+    background-size: cover;
+    border-radius: 40%;
+}
+
+ 
