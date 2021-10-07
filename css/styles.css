@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif, fantasy, cursive;
+    font-family: Arial, Helvetica, sans-serif, Neucha, fantasy, cursive;
     margin: 0;
     box-sizing: content-box;
 }
@@ -10,12 +10,13 @@
 }
 
 #navbar {
+    position: relative;
     background: url(../assets/background.jpg);
     height: 60px;
 }
 
 .navbar-brand {
-    font-family: 'Dancing Script', 'cursive';
+    font-family: 'Dancing Script', cursive;
     font-size: xx-large;
     font-weight: normal;
     margin-left: 50px;
@@ -27,20 +28,21 @@
 }
 
 .tabs {
+    font-family: 'Neucha', cursive;
     text-align: center;
     color: white;
     width: 100px;
-    line-height: 30px;
+    line-height: 25px;
     font-size: large;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
 }
 
 .tabs:hover {
-    transition: 0.2s ease-in-out;
-    padding: 20px;
     background: url(../assets/background.jpg);
-    color: limegreen;
+    transition:  0.5s;
+    padding: 15px;
+    color: violet;
     text-decoration: none;
 }
 
@@ -54,80 +56,56 @@
 .heading span {
     line-height: 70px;
 }
-.buttons {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#button {
+
+.location {
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 50px;
-    padding: 10px;
-    font-size: large;
-    border-radius: 30px;
-    background-color: white;
-    color: indigo;
-    text-decoration: none;
-    margin-right: 30px;
-}
-#button:hover {
-    transform: scale(1.1);
-    background-color: limegreen;
-    color: black;
+    height: 10rem;
 }
 
-.cards {
-    display: inline-flex;
+.label, .label-sm {
+    position: absolute;
+    top: 50%;
+    color: #e4eb81;
+    pointer-events: none;
+    transition: all 0.35s;
 }
 
-.card {
-    border-width: 4px thin;
-    border-color: black;
-    border-radius: 30px;
-    box-shadow: grey;
-    margin: 40px;
-}
-.card > img {
-    border-radius: 20px;
-    height: 200px;
-}
-.card-body {
-    align-items: center;
-    justify-content: center;
+.label {
     text-align: center;
+    width: 500px;
+    font-size: 1.25rem;
+    transform: translate(0, -50%);
+    border-bottom: 2px solid white;
 }
 
-.card:hover {
-    transform: scale(1.1);
+input {
+    height: inherit;
+    width: 20rem;
+    border: 0;
+    border-bottom: 2px solid #2e2a33;
+    outline: none;
+    background: transparent;
+    color: #f7f7f7;
+    font-size: 1rem;
+    transition: all 0.35s;
+    margin-right: 20px;
 }
 
-.aboutus {
-    width: 100%;
-    display: inline-flex;
-    height: 400px;
-    background-color: whitesmoke;
+input:focus {
+    border-bottom-color: #1ac0a2;
 }
 
-.left {
-    color: purple;
-    width: 50%;
-    height: 400px;
+input:focus ~ .label {
+    opacity: 0.25;
+    transform: translate(0, -50%);
 }
 
-.right {
-    width: 50%;
+input:focus ~ .label-sm {
+    opacity: 1;
+    transform: translate(0, -50%);
 }
 
-.circle {
-    margin-top: 20px;
-    width: 600px;
-    height: 350px;
-    background: url('../assets/tech.jpg');
-    background-size: cover;
-    border-radius: 40%;
-}
-
- 
