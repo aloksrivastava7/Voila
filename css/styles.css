@@ -23,7 +23,7 @@
     margin-right: 350px;
 }
 .navbar-brand:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
     font-weight: bolder;
 }
 
@@ -57,55 +57,4 @@
     line-height: 70px;
 }
 
-.location {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10rem;
-}
-
-.label, .label-sm {
-    position: absolute;
-    top: 50%;
-    color: #e4eb81;
-    pointer-events: none;
-    transition: all 0.35s;
-}
-
-.label {
-    text-align: center;
-    width: 500px;
-    font-size: 1.25rem;
-    transform: translate(0, -50%);
-    border-bottom: 2px solid white;
-}
-
-input {
-    height: inherit;
-    width: 20rem;
-    border: 0;
-    border-bottom: 2px solid #2e2a33;
-    outline: none;
-    background: transparent;
-    color: #f7f7f7;
-    font-size: 1rem;
-    transition: all 0.35s;
-    margin-right: 20px;
-}
-
-input:focus {
-    border-bottom-color: #1ac0a2;
-}
-
-input:focus ~ .label {
-    opacity: 0.25;
-    transform: translate(0, -50%);
-}
-
-input:focus ~ .label-sm {
-    opacity: 1;
-    transform: translate(0, -50%);
-}
 
