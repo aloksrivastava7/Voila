@@ -1,2 +1,0 @@
-# Voila
-Full-Stack project
