@@ -17,7 +17,7 @@
 <body>
   <!-- Header -->
   <header class="main-header-inner">
-    <nav class="transparent">
+    <nav class="navbar">
       <div class="container">
         <div class="nav-wrapper">
           <a href="index.html" class="brand-logo">VOILA</a>
@@ -26,13 +26,13 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <a href="index.html" id="tabs">Home</a>
+              <a href="index.html" id="tabs">HOME</a>
             </li>
             <li>
-              <a href="solutions.html" id="tabs">Solutions</a>
+              <a href="solutions.html" id="tabs">SOLUTIONS</a>
             </li>
             <li>
-              <a class="active-link" href="signup.html" id="tabs">Sign up</a>
+              <a class="active-link" href="signup.html" id="tabs">REGISTER</a>
             </li>
             <li>
               <a href="https://facebook.com" id="tabs">
@@ -45,7 +45,7 @@
               </a>
             </li>
             <li>
-              <a href="https://instagram.com" id="tabs">
+              <a href="https://instagram.com">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
@@ -104,7 +104,7 @@
             molestiae, recusandae autem sequi?</p>
         </div>
         <div class="col s12 m6">
-          <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
+          <div class="card-registerPanel grey lighten-4 grey-text text-darken-4 z-depth-0" style="padding: 5px">
             <form>
               <div class="input-field">
                 <input type="text" id="first_name">
@@ -137,7 +137,7 @@
                 </select>
                 <label for="role">Role</label>
               </div>
-              <input type="submit" value="Register !" class="btn btn-large purple btn-extend">
+              <input type="submit" value="Register !" class="btn btn-large btn-extend" id="showcaseButtons" style="border: 1px solid #4F2779">
             </form>
           </div>
         </div>
@@ -146,18 +146,33 @@
   </section>
 
   <!-- Footer -->
-  <footer class="page-footer deep-purple lighten-1">
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">About Us</h5>
-          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus, hic id quod enim voluptate </p>
+          <h5 class="white-text">Team Members</h5>
+          <div class="team">
+            <div class="circle" id="member1">
+
+            </div>
+            <div class="circle" id="member2">
+
+            </div>
+            <div class="circle" id="member3">
+
+            </div>
+          </div>
+          <div class="Member-names">
+            <p class="grey-text text-lighten-4" id="names">Alok Srivastava</p>
+            <p class="grey-text text-lighten-4" id="names">Astha Jaiswal</p>
+            <p class="grey-text text-lighten-4" id="names">Ayushi Gupta</p>
+          </div>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
-          <ul>
+          <ul style="line-height: 30px">
             <li>
-              <a class="grey-text text-lighten-3" href="index.html">Home 1</a>
+              <a class="grey-text text-lighten-3" href="index.html">Home</a>
             </li>
             <li>
               <a class="grey-text text-lighten-3" href="solutions.html">Solutions</a>
@@ -170,7 +185,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright deep-purple darken-1">
+    <div class="footer-copyright deep-purple darken-1" style="border: 1px solid #4F2779">
       <div class="container">
         VOILA &copy; 2021
         <a class="grey-text text-lighten-4 right" href="#!">Terms & Conditions</a>

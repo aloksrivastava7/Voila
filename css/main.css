@@ -8,7 +8,9 @@
   height: 100%;
   overflow: hidden;
 }
-
+.brand-logo {
+  font-family: cursive;
+}
 .main-header {
   background: url(../img/background.jpg);
   background-size: cover;
@@ -16,7 +18,11 @@
   min-height: 600px;
   color: #fff;
 }
-
+.navbar {
+  position: sticky;
+  background: url(../img/background.jpg);
+  background-size: cover;
+}
 .main-header .showcase {
   padding-top: 100px;
 }
@@ -30,13 +36,15 @@
 }
 
 #tabs:hover {
-    background: url(../img/background.jpg);
+    background-color: #4629A4;
     background-size: cover;
-    background-position: center;
     color: white;
 }
 
 .card-panel:hover {
+    background: linear-gradient(#6C86F2,#4629A4);
+    background-size: cover;
+    color: white;
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), -5px -5px 30px 15px rgba(0,0,0,0.22);
 
@@ -45,6 +53,14 @@
   padding-top: 50px;
 }
 
+#showcaseButtons {
+  color: purple;
+  background-color: white;
+}
+#showcaseButtons:hover {
+  color: white;
+  background-color: purple;
+}
 .active-link {
   color: #d847f1;
   font-weight: bold;
@@ -70,8 +86,13 @@
   min-height: 160px;
 }
 #quazzupodcast {
+  color: purple;
+  background-color: white;
+}
+
+#quazzupodcast:hover {
   color: white;
-  background-color: grey;
+  background-color: purple;
 }
 .section-podcast a {
   margin-top: 30px;
@@ -93,7 +114,44 @@
   display: block;
   width: 100%;
 }
+.page-footer {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.team {
+  display: inline-flex;
+}
 
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+
+}
+#member1 {
+  background: url(../img/member1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#member2 {
+  background: url(../img/member2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#member3 {
+  background: url(../img/member3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Member-names {
+  display: inline-flex;
+}
+
+#names {
+  margin-right: 30px;
+}
 @media (max-width: 500px) {
   .section-developers,
   .section-podcast {
